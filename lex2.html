@@ -1,249 +1,525 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lex Tech Company</title>
-    <link rel="icon" href="files/logolex.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/uicons/css/uicons.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #f8f9fa;
-        }
-        .dark body {
-            background: #0f172a;
-        }
-        .logo-watermark {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            opacity: 0.02;
-            transform: translate(-50%, -50%);
-            z-index: 0;
-            max-width: 80%;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEX TECH STORE Premium Apple Gadgets</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@keyframes fadeIn { from { opacity:0; transform:translateY(20px) } to { opacity:1; transform:translateY(0) } }
+@keyframes pulse { 0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)} }
+.fade-in { animation: fadeIn 1s ease-out forwards; }
+.pulse-hover:hover { animation: pulse 1.5s infinite; }
+.product-card { transition: all 0.3s ease; }
+.product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04); }
+.nav-link { position: relative; }
+.nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 0; background-color: #3b82f6; transition: width 0.3s; }
+.nav-link:hover::after { width: 100%; }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+</style>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#1e40af'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 </head>
-
-<body class="dark:bg-slate-900 text-gray-900 dark:text-white relative">
-    <!-- Logo Watermark -->
-    <img src="files/logolex.jpg" class="logo-watermark" alt="Lex Tech Logo">
-
-    <!-- Header -->
-    <header class="bg-white dark:bg-slate-800 shadow py-4">
-        <div class="container mx-auto px-4 flex items-center justify-between">
-            <img src="files/logolex.jpg" alt="Lex Tech" class="h-12">
-            <nav class="space-x-6 hidden md:block">
-                <a href="#about" class="hover:text-indigo-600 transition">About</a>
-                <a href="#products" class="hover:text-indigo-600 transition">Products</a>
-                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="py-20 text-center bg-gradient-to-br from-indigo-600 to-blue-500 text-white">
-        <h1 class="text-4xl md:text-6xl font-bold">Welcome to Lex Tech</h1>
-        <p class="mt-4 text-lg">Premium Apple Products Delivered in Nigeria</p>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-100 dark:bg-slate-800">
-        <div class="container mx-auto px-4 text-center max-w-3xl">
-            <h2 class="text-3xl font-semibold mb-4">About Lex Tech</h2>
-            <p class="text-slate-500 dark:text-slate-300">
-                At Lex Tech Company, we import premium Apple products directly into Nigeria, making cutting-edge technology more accessible. We are passionate about expanding the world of tech in Africa and providing genuine, affordable gadgets.
-            </p>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-semibold mb-10">Our Products</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Sample Product Card -->
-                <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md p-5 hover:scale-105 transform transition">
-                    <img src="files/iphone13.jpg" class="w-full h-48 object-contain mb-4" alt="iPhone 13">
-                    <h4 class="text-xl font-semibold mb-2">iPhone 13</h4>
-                    <p class="text-gray-500 dark:text-gray-300">₦450,000 / $300</p>
-                    <a href="https://wa.me/2340000000000" target="_blank" class="mt-3 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg">Order on WhatsApp</a>
-                </div>
-                <!-- More products can be added below in same format -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-100 dark:bg-slate-800">
-        <div class="container mx-auto px-4 text-center max-w-2xl">
-            <h2 class="text-3xl font-semibold mb-4">Get in Touch</h2>
-            <p class="text-slate-500 dark:text-slate-300 mb-6">Have questions or want to order directly? Reach out to us.</p>
-            <a href="https://wa.me/2340000000000" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-lg">Chat on WhatsApp</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-white py-6 text-center">
-        <p>&copy; 2025 Lex Tech Company. All rights reserved.</p>
-    </footer>
-
-    <!-- Back to top -->
-    <a href="#" onclick="topFunction()" id="back-to-top" class="fixed hidden text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-indigo-600 text-white leading-9"><i class="mdi mdi-arrow-up"></i></a>
-
-    <!-- Google Translate -->
-    <div style="position: fixed;top:80%;z-index:10000; right: 10px;">
-        <div id="google_translate_element"></div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        // Back to top
-        const btn = document.getElementById("back-to-top");
-        window.onscroll = () => {
-            if (window.scrollY > 100) {
-                btn.style.display = "block";
-            } else {
-                btn.style.display = "none";
-            }
-        }
-        function topFunction() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<section id="controls-carousel" class="relative" data-carousel="static">
-        <div class="overflow-hidden relative h-screen inset-0">
-            <div class="flex items-center justify-center transition-all duration-700 ease-in-out absolute inset-0 transform z-10 translate-x-full" data-carousel-item="active">
-                <div class="image-wrap absolute inset-0 -top-[350px] -bottom-[350px] -left-[100px] -right-[100px] min-w-full w-auto min-h-full h-auto overflow-hidden m-auto z-1  bg-top bg-no-repeat" style="background:url(IMG/14pro.jpg);background-size:cover;"></div>
-                <div class="absolute inset-0 md:bg-gradient-to-r md:from-black md:via-black/80 md:bg-black/20 bg-black/70 z-2"></div>
-                <div class="container z-3">
-                    <div class="grid grid-cols-1 mt-10">
-                        <div class="md:text-left text-center">
-                            <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">LEX TECH STORES</h1>
-                            <p class="text-white/70 text-lg max-w-xl">Home of the best tech accessories!</p>
-                        </div>
-                    </div>
-                    <!--end grid-->
-                </div>
-                <!--end container-->
-            </div>
-            <div class="flex items-center justify-center transition-all duration-700 ease-in-out absolute inset-0 transform -translate-x-full z-10" data-carousel-item="">
-                <div class="absolute inset-0 image-wrap z-1  bg-top bg-no-repeat" style="background:url(IMG/15.jpg);background-size:cover;"></div>
-                <div class=" absolute inset-0 md:bg-gradient-to-b md:from-transparent md:to-black md:bg-black/20 bg-black/70 z-2"></div>
-                <div class="container z-3">
-                    <div class="grid grid-cols-1 mt-10">
-                        <div class="text-center">
-                            <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">LEX TECH INVESTMENTS</h1>
-                            <p class="text-white/70 text-lg max-w-xl mx-auto"> Is that what you want?</p>
-                            <div class="mt-8">
-                                <a href="files/white-paper.pdf" target="_blank" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">White paper</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end grid-->
-                </div>
-                <!--end container-->
-            </div>
-            <div class="flex items-center justify-center transition-all duration-700 ease-in-out absolute inset-0 transform translate-x-0 z-20" data-carousel-item="">
-                <div class="absolute inset-0 image-wrap z-1 bg-top bg-no-repeat" style="background:url(img/15.jpg);background-size:cover;"></div>
-                <div class=" absolute inset-0 md:bg-gradient-to-l md:from-black md:via-black/80 md:bg-black/20 bg-black/70 z-2"></div>
-                <div class="container z-3">
-                    <div class="grid grid-cols-1 mt-10">
-                        <div class="md:text-right text-center">
-                            <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">Lex Tech Stores Partners !</h1>
-                            <p class="text-white/70 text-lg max-w-xl md:ml-auto">Check out our latest gadgets!</p>
-                            <div class="mt-8">
-                                <a href="/register" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Invest Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end grid-->
-                </div>
-                <!--end container-->
-            </div>
-        </div>
-        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full border border-white hover:border-indigo-600 hover:bg-indigo-600 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-                <span class="hidden">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full border border-white hover:border-indigo-600 hover:bg-indigo-600 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-                <span class="hidden">Next</span>
-            </span>
-        </button>
-    </section>
-    <section>
-      
-
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-    </div>
-    <!-- Slider indicators -->
-    <div class="hidden">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="hidden">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="hidden">Next</span>
-        </span>
-    </button>
+<body class="bg-gray-50 font-sans">
+<!-- Navigation -->
+<header class="w-full bg-gradient-to-r from-gray-900 to-blue-900 text-white shadow-lg">
+<nav class="container mx-auto flex items-center justify-between py-4 px-6">
+<a href="#" class="text-2xl font-['Pacifico'] text-white">logo</a>
+<div class="hidden md:flex space-x-8">
+<a href="#" class="nav-link py-2 text-white hover:text-blue-200 transition-colors">Home</a>
+<a href="#" class="nav-link py-2 text-white hover:text-blue-200 transition-colors">Products</a>
+<a href="#" class="nav-link py-2 text-white hover:text-blue-200 transition-colors">About</a>
+<a href="#" class="nav-link py-2 text-white hover:text-blue-200 transition-colors">Contact</a>
 </div>
+<div class="flex items-center space-x-6">
+<a href="#" class="w-10 h-10 flex items-center justify-center text-white hover:text-blue-200 transition-colors">
+<i class="ri-search-line ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center text-white hover:text-blue-200 transition-colors">
+<i class="ri-user-line ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center text-white hover:text-blue-200 transition-colors relative">
+<i class="ri-shopping-cart-line ri-lg"></i>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+</a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="w-full relative overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=premium%20modern%20apple%20products%20display%20with%20iPhone%2C%20MacBook%2C%20Apple%20Watch%2C%20and%20AirPods%20arranged%20elegantly%20on%20a%20clean%20minimalist%20surface%20with%20soft%20gradient%20lighting%2C%20high-end%20product%20photography%20with%20blue%20and%20white%20color%20scheme%2C%20professional%20product%20showcase&width=1920&height=1080&seq=1&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-blue-900/40"></div>
+<div class="container mx-auto px-6 py-24 md:py-32 relative z-10">
+<div class="w-full md:w-1/2 fade-in">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">Premium Apple Gadgets</h1>
+<p class="text-lg md:text-xl text-blue-100 mb-8">Experience the ultimate in technology and design with our exclusive collection of premium Apple products. Authorized reseller with expert service.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#products" class="bg-primary hover:bg-blue-600 text-white py-3 px-8 !rounded-button font-medium transition-colors duration-300 text-center pulse-hover whitespace-nowrap">Explore Products</a>
+<a href="#contact" class="bg-transparent border-2 border-white text-white py-3 px-8 !rounded-button font-medium hover:bg-white/10 transition-colors duration-300 text-center whitespace-nowrap">Contact Us</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section id="products" class="py-20 px-6">
+<div class="container mx-auto">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Featured Products</h2>
+<p class="text-lg text-gray-600 max-w-2xl mx-auto">Discover our selection of the latest Apple devices, all with official warranty and premium support.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=iPhone%2015%20Pro%20Max%20in%20titanium%20finish%20on%20clean%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20high-end%20Apple%20smartphone%2C%20detailed%20product%20shot&width=600&height=600&seq=2&orientation=squarish" alt="iPhone 15 Pro Max" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">iPhone 15 Pro Max</h3>
+<p class="text-gray-600 mb-4">Titanium. So strong. So light. So Pro.</p>
+<div class="flex justify-between items-center">
+<span class="text-xl font-bold text-gray-900">$1,199</span>
+<button class="bg-primary hover:bg-blue-600 text-white py-2 px-4 !rounded-button transition-colors whitespace-nowrap">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=MacBook%20Air%20M3%20in%20sleek%20silver%20finish%20on%20clean%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20high-end%20Apple%20laptop%2C%20detailed%20product%20shot&width=600&height=600&seq=3&orientation=squarish" alt="MacBook Air M3" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">MacBook Air M3</h3>
+<p class="text-gray-600 mb-4">Supercharged by the M3 chip.</p>
+<div class="flex justify-between items-center">
+<span class="text-xl font-bold text-gray-900">$1,099</span>
+<button class="bg-primary hover:bg-blue-600 text-white py-2 px-4 !rounded-button transition-colors whitespace-nowrap">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Apple%20Watch%20Series%209%20in%20stainless%20steel%20case%20with%20sport%20band%20on%20clean%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20high-end%20Apple%20smartwatch%2C%20detailed%20product%20shot&width=600&height=600&seq=4&orientation=squarish" alt="Apple Watch Series 9" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Apple Watch Series 9</h3>
+<p class="text-gray-600 mb-4">Smarter. Brighter. Mightier.</p>
+<div class="flex justify-between items-center">
+<span class="text-xl font-bold text-gray-900">$399</span>
+<button class="bg-primary hover:bg-blue-600 text-white py-2 px-4 !rounded-button transition-colors whitespace-nowrap">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=AirPods%20Pro%202%20with%20charging%20case%20on%20clean%20white%20background%2C%20professional%20product%20photography%20with%20soft%20shadows%2C%20high-end%20Apple%20wireless%20earbuds%2C%20detailed%20product%20shot&width=600&height=600&seq=5&orientation=squarish" alt="AirPods Pro 2" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-800 mb-2">AirPods Pro 2</h3>
+<p class="text-gray-600 mb-4">Adaptive Audio. Conversation Awareness.</p>
+<div class="flex justify-between items-center">
+<span class="text-xl font-bold text-gray-900">$249</span>
+<button class="bg-primary hover:bg-blue-600 text-white py-2 px-4 !rounded-button transition-colors whitespace-nowrap">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a href="#" class="inline-block bg-white border border-primary text-primary hover:bg-primary hover:text-white py-3 px-8 !rounded-button font-medium transition-colors duration-300 whitespace-nowrap">View All Products</a>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-20 px-6 bg-gray-100">
+<div class="container mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Choose Us</h2>
+<p class="text-lg text-gray-600 max-w-2xl mx-auto">We offer more than just products - we provide a premium experience from purchase to support.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Feature 1 -->
+<div class="bg-white p-8 rounded-lg shadow-md text-center">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-shield-check-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-3">Official Warranty</h3>
+<p class="text-gray-600">All products come with official Apple warranty and our additional 30-day satisfaction guarantee.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-white p-8 rounded-lg shadow-md text-center">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-verify-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-3">Authentic Products</h3>
+<p class="text-gray-600">We are an authorized Apple reseller, guaranteeing 100% authentic products.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-white p-8 rounded-lg shadow-md text-center">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-truck-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-3">Express Delivery</h3>
+<p class="text-gray-600">Fast and secure shipping with real-time tracking. Free delivery on orders over $500.</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-white p-8 rounded-lg shadow-md text-center">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-customer-service-2-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-3">Expert Support</h3>
+<p class="text-gray-600">Our certified Apple specialists are available 7 days a week to assist with any questions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-20 px-6">
+<div class="container mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+<p class="text-lg text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from our satisfied customers.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="flex text-yellow-400 mb-4">
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<p class="text-gray-600 mb-6">"The MacBook Air I purchased arrived in perfect condition with all original packaging. The setup assistance provided by their team was exceptional. Highly recommended!"</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Michael Anderson</h4>
+<p class="text-gray-500 text-sm">Marketing Director</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="flex text-yellow-400 mb-4">
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<p class="text-gray-600 mb-6">"I was hesitant to buy online, but their customer service was outstanding. They helped me choose the right iPhone model for my needs and the delivery was faster than expected."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Sophia Martinez</h4>
+<p class="text-gray-500 text-sm">Software Engineer</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="flex text-yellow-400 mb-4">
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<p class="text-gray-600 mb-6">"When my Apple Watch had an issue, their technical support team walked me through troubleshooting steps and resolved it quickly. The after-sales service is truly impressive."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">James Wilson</h4>
+<p class="text-gray-500 text-sm">Financial Analyst</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-20 px-6 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+<div class="container mx-auto">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Stay Updated</h2>
+<p class="text-lg text-blue-100 mb-8">Subscribe to our newsletter for exclusive deals, new product announcements, and tech tips.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input type="email" placeholder="Your email address" class="flex-grow py-3 px-4 rounded-lg border-none focus:ring-2 focus:ring-blue-300 focus:outline-none text-gray-800">
+<button type="submit" class="bg-white text-primary hover:bg-blue-50 py-3 px-6 !rounded-button font-medium transition-colors whitespace-nowrap">Subscribe</button>
+</form>
+<p class="text-sm text-blue-200 mt-4">We respect your privacy. Unsubscribe at any time.</p>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+ <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 fade-in">Contact Us</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 fade-in">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-6">Get in Touch</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-envelope text-blue-600 text-xl mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <a href="mailto:alekwealexander@gmail.com" class="text-blue-600 hover:underline">alekwealexander@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-phone-alt text-blue-600 text-xl mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium">Phone (WhatsApp)</h4>
+                                    <a href="tel:+2347037372750" class="text-blue-600 hover:underline">+234 703 737 2750</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-phone text-blue-600 text-xl mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium">Phone (Calls)</h4>
+                                    <a href="tel:+2348125373357" class="text-blue-600 hover:underline">+234 812 537 3357</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium">Location</h4>
+                                    <p>Enugu State, Nigeria</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-medium mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/profile.php?id=100091666780050&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://x.com/aalekwe26184?s=21" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/lextech_company?igsh=OWUzcG5sNm1zdWRp" target="_blank" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/message/JELQDDRY5GMAP1" target="_blank" class="bg-green-600 text-white p-3 rounded-full hover:bg-green-700 transition duration-300">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<h3 class="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
+<form>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="name" class="block text-gray-700 mb-2">Full Name</label>
+<input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition-colors">
+</div>
+<div>
+<label for="email" class="block text-gray-700 mb-2">Email Address</label>
+<input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition-colors">
+</div>
+</div>
+<div class="mb-6">
+<label for="subject" class="block text-gray-700 mb-2">Subject</label>
+<input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition-colors">
+</div>
+<div class="mb-6">
+<label for="message" class="block text-gray-700 mb-2">Message</label>
+<textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition-colors"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary hover:bg-blue-600 text-white py-3 px-6 !rounded-button font-medium transition-colors whitespace-nowrap">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8 px-6">
+<div class="container mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div>
+<a href="#" class="text-2xl font-['Pacifico'] text-white mb-6 inline-block">logo</a>
+<p class="text-gray-400 mb-6">Authorized Apple reseller providing premium products with exceptional service since 2010.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-twitter-x-line ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-instagram-line ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-6">Customer Service</h4>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Shipping & Returns</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Warranty Information</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-6">Contact Information</h4>
+<ul class="space-y-3 text-gray-400">
+<li class="flex items-start">
+<i class="ri-map-pin-line ri-lg mr-3 mt-1"></i>
+<span>123 Tech Boulevard, Silicon Valley, CA 94025</span>
+</li>
+<li class="flex items-start">
+<i class="ri-phone-line ri-lg mr-3 mt-1"></i>
+<span>+1 (800) 123-4567</span>
+</li>
+<li class="flex items-start">
+<i class="ri-mail-line ri-lg mr-3 mt-1"></i>
+<span>support@lextechstore.com</span>
+</li>
+<li class="flex items-start">
+<i class="ri-time-line ri-lg mr-3 mt-1"></i>
+<span>Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-800">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-500 mb-4 md:mb-0">© 2025 LEX TECH STORE. All rights reserved.</p>
+<div class="flex items-center space-x-4">
+<i class="ri-visa-fill ri-lg text-gray-400"></i>
+<i class="ri-mastercard-fill ri-lg text-gray-400"></i>
+<i class="ri-paypal-fill ri-lg text-gray-400"></i>
+<i class="ri-apple-fill ri-lg text-gray-400"></i>
+</div>
+</div>
+</div>
+</div>
+</footer>
 
-    </section>
-  </body>
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        fadeElements.forEach(element => {
+            fadeInObserver.observe(element);
+        });
+        // Search functionality
+        const searchInput = document.querySelector('input[type="text"]');
+        const productCards = document.querySelectorAll('.product-card');
+        
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            productCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</body>
 </html>
