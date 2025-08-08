@@ -31,76 +31,6 @@
             <h1 class="text-2xl font-bold">LEX TECH COMPANY</h1>
         </div>
 
-        <!-- search bar -->
-<!-- Inside your existing header/nav, place this search bar -->
-<form class="search-bar">
-  <input type="text" placeholder="Search products, models..." required>
-  <button type="submit">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-      <circle cx="11" cy="11" r="8"></circle>
-      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-    </svg>
-  </button>
-</form>
-
-<style>
-.search-bar {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 50px;
-  padding: 5px 10px;
-  margin-left: 20px;
-  transition: all 0.3s ease;
-}
-
-.search-bar input {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 8px 12px;
-  font-size: 14px;
-  width: 180px;
-  transition: width 0.3s ease;
-}
-
-.search-bar input::placeholder {
-  color: rgba(255,255,255,0.6);
-}
-
-.search-bar button {
-  background: linear-gradient(135deg, #4f46e5, #06b6d4);
-  border: none;
-  outline: none;
-  padding: 6px 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  transition: transform 0.2s ease, background 0.3s ease;
-}
-
-.search-bar button:hover {
-  transform: scale(1.1);
-  background: linear-gradient(135deg, #06b6d4, #4f46e5);
-}
-
-.search-bar:hover input {
-  width: 220px; /* Expands on hover */
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-}
-</style>
-
-
-
         <nav class="hidden md:flex space-x-8">
             <a href="#home" class="nav-link text-white py-2">Home</a>
             <a href="#products" class="nav-link text-white py-2">Products</a>
@@ -181,470 +111,471 @@ setInterval(changeBackground, 3000); // Change every 3 seconds
 
   <!-- Products Section -->
   <section id="products" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12 fade-in">Our Products</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- AirPods Max -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/airpod max.jpg" alt="AirPods Max" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">AirPods Max</h3>
-  <p class="text-gray-600 mb-4">Premium over-ear headphones with ANC.</p>
-  <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦450,000</span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20AirPods%20Max" target="_blank" class="bg-green-600 hover:to-blue-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-</div>
-<!-- AirPodmax (2nd Gen) -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/airpodsmax 2nd.jpeg" alt="AirPods Max" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">AirPods Max 2nd Generation USB-C
-</h3>
-  <p class="text-gray-600 mb-4">Premium over-ear headphones with ANC.</p>
-  <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦550,000</span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20AirPods%20Max%202ndGen" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-</div>
-<!--Airtags-->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.2s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/airtags.jpg" 
-             alt="Apple Airtags" 
-             class="h-48 object-contain">
+    
+        <!-- search bar -->
+<!-- Inside your existing header/nav, place this search bar -->
+<form class="search-bar">
+  <input type="text" placeholder="Search products, models..." required>
+  <button type="submit">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </button>
+</form>
+<style>
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin: 0 auto 32px auto; /* Center horizontally and add bottom margin */
+    width: 60%; /* 60% width */
+    box-shadow: 0 4px 32px 0 rgba(0,0,0,0.12), 0 0 0 100vw rgba(0,0,0,0.25) inset;
+    max-width: 600px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-out;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 100%;
+    transition: background 0.2s;
+    background: transparent;
+    flex: 1;
+    animation: fadeIn 1s ease-out;
+}
+
+.search-bar input:focus {
+    background: #f3f4f6;
+    color: #222;
+    font-size: 17px;
+    box-shadow: 0 0 0 2px #3b82f6;
+    animation: pulse 0.5s;
+}
+
+.search-bar input::placeholder {
+    color: rgba(0,0,0,0.5);
+    font-size: 15px;
+    opacity: 1;
+}
+
+.search-bar button {
+    background: linear-gradient(135deg, #4f46e5, #06b6d4);
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.2s ease, background 0.3s ease;
+    margin-left: 8px;
+    animation: fadeIn 1s ease-out;
+}
+
+.search-bar button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #06b6d4, #4f46e5);
+    animation: pulse 0.5s;
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 95%;
+        max-width: 100%;
+        padding: 4px 6px;
+    }
+    .search-bar input {
+        font-size: 15px;
+    }
+}
+</style>
+   
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBar = document.querySelector('.search-bar');
+    const input = searchBar.querySelector('input');
+    // Create overlay element
+    const overlay = document.createElement('div');
+    overlay.className = 'cover-overlay';
+    searchBar.insertBefore(overlay, input);
+
+    input.addEventListener('focus', function() {
+        searchBar.classList.add('focused');
+    });
+    input.addEventListener('blur', function() {
+        searchBar.classList.remove('focused');
+    });
+});
+</script>
+<h2 class="text-3xl font-bold text-center mb-12 fade-in">Our Products</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Example Product Card (repeat for each product) -->
+    <!-- AirPods Max -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/airpod max.jpg" alt="AirPods Max" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">AirPods Max</h3>
+        <p class="text-gray-600 mb-4">Premium over-ear headphones with ANC.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦450,000</span>
+        <a href="https://wa.meim/2347037372750?text=I%20want%20to%20buy%20AirPods%20Max" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
-    <h3 class="text-xl font-semibold mb-2">Apple Airtags</h3>
-    <p class="text-gray-600 mb-4"> AirTag helps you track and locate your personal items like keys, bags, or wallets using Apple’s Find My app.</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦30,000</span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Airtags" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-          contact
-        </a>
+    <!-- AirPods Max 2nd Generation USB-C -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/airpodsmax 2nd.jpeg" alt="AirPods Max 2nd Generation" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">AirPods Max 2nd Generation USB-C</h3>
+        <p class="text-gray-600 mb-4">Premium over-ear headphones with ANC.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦550,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20AirPods%20Max%202ndGen" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- Airtags -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/airtags.jpg" alt="Apple Airtags" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Apple Airtags</h3>
+        <p class="text-gray-600 mb-4">AirTag helps you track and locate your personal items like keys, bags, or wallets using Apple’s Find My app.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦30,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Airtags" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- MagSafe -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/magsafe.jpg" alt="Apple MagSafe Battery Pack" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Apple MagSafe Battery Pack Wireless Power Bank</h3>
+        <p class="text-gray-600 mb-4">The Apple MagSafe Battery Pack provides safe, wireless charging for your iPhone on the go.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦20,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20magsafe" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- Anker -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/anker.jpg" alt="ANKER" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Anker</h3>
+        <p class="text-gray-600 mb-4">Anker Laptop Power Bank, 25,000mAh Portable Charger with Triple 100W USB-C Ports, Built-in and Retractable Cables, for iPhone 16/15 Series, MacBook, Samsung, and More (Flight-Approved)</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦170,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Anker%20powerbank" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- AirPods Pro (2nd Gen) -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/airpodpro.jpeg" alt="AirPods Pro (2nd Gen)" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">AirPods Pro (2nd Gen)</h3>
+        <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦180,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro%202nd%20Gen" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- AirPods Pro 2 USB-C -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/airpodpro.jpeg" alt="AirPods Pro 2 USB-C" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">AirPods Pro 2 USB-C</h3>
+        <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦60,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro%202nd%20Gen" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- AirPods Pro -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/airpods pro.webp" alt="AirPods Pro" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">AirPods Pro</h3>
+        <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦90,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- AirPods Pro (lower price) -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/airpods pro.webp" alt="AirPods Pro" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">AirPods Pro</h3>
+        <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦40,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- A9 pro -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/a9pro.webp" alt="A9 pro" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">A9 pro</h3>
+        <p class="text-gray-600 mb-4">Anc+enc Airpods Headphones With Smart Display Screen</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦40,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20A9pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- Bose -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/bose.jpg" alt="Bose QuietComfort ultra Headphones" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Bose QuietComfort ultra Headphones</h3>
+        <p class="text-gray-600 mb-4">Bose QuietComfort Headphones deliver premium sound with powerful noise cancellation for all-day comfort.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦60,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20bose%20headphones" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- Apple Watch Ultra -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/ultra watch.jpeg" alt="Apple Watch Ultra" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Apple Watch Ultra</h3>
+        <p class="text-gray-600 mb-4">Rugged design, advanced health and fitness tracking, long battery life.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦300,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Watch%20Ultra" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- Apple Watch Series 9 -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/series9.jpeg" alt="Apple Watch Series 9" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Apple Watch Series 9</h3>
+        <p class="text-gray-600 mb-4">The most advanced Apple Watch with the new S9 chip and brighter display.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦90,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Watch%20Series%209" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- Apple Watch Series 10 -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/series10.jpg" alt="Apple Watch Series 10" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Apple Watch Series 10</h3>
+        <p class="text-gray-600 mb-4">All-new larger display and advanced health tracking technology.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦150,000</span>
+        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Watch%20Series%2010" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 8 -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/8.jpg" alt="iPhone 8" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 8</h3>
+        <p class="text-gray-600 mb-4">Classic 4.7" Retina display, reliable and affordable.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦140,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%208" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 8 Plus 64GB -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/8plus.jpg" alt="iPhone 8 Plus 64GB" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 8 Plus 64GB</h3>
+        <p class="text-gray-600 mb-4">Big screen 5.5", 64GB, dual cameras.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦150,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%208%20Plus%2064GB" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 8 Plus 128GB -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/8plus.jpg" alt="iPhone 8 Plus 128GB" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 8 Plus 128GB</h3>
+        <p class="text-gray-600 mb-4">Large storage option, pristine condition.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦190,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%208%20Plus%20128GB" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone XS 64GB -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/x.jpg" alt="iPhone XS 64GB" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone XS 64GB</h3>
+        <p class="text-gray-600 mb-4">Compact OLED display, dual-camera system.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦250,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%20XS%2064GB" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone XS 256GB -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/x.jpg" alt="iPhone XS 256GB" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone XS 256GB</h3>
+        <p class="text-gray-600 mb-4">Higher storage model, ready to go.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦260,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%20XS%20256GB" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone XR -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/xr.jpg" alt="iPhone XR" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone XR</h3>
+        <p class="text-gray-600 mb-4">6.1” Liquid Retina, vibrant colors.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦300,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%20XR" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone XS Max -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/xs max.jpg" alt="iPhone XS Max" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone XS Max</h3>
+        <p class="text-gray-600 mb-4">Flagship specs with large 6.5” OLED display.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦280,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%20XS%20Max" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 11 -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/11.jpg" alt="iPhone 11" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 11</h3>
+        <p class="text-gray-600 mb-4">Dual cameras, long battery life, vibrant finish.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦350,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2011" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 12 -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/12.jpg" alt="iPhone 12" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 12</h3>
+        <p class="text-gray-600 mb-4">Super Retina XDR, A14 Bionic, 5G.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦450,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2012" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 12 Pro -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/12 pro.jpg" alt="iPhone 12 Pro" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 12 Pro</h3>
+        <p class="text-gray-600 mb-4">Pro camera system with LiDAR.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦560,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2012%20Pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 12 Pro Max -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/12 pro.jpg" alt="iPhone 12 Pro Max" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 12 Pro Max</h3>
+        <p class="text-gray-600 mb-4">Largest screen and best camera in the lineup.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦630,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2012%20Pro%20Max" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 13 -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/13.jpg" alt="iPhone 13" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 13</h3>
+        <p class="text-gray-600 mb-4">Improved battery, brighter display.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦550,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2013" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 13 Pro -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/13 pro.jpg" alt="iPhone 13 Pro" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 13 Pro</h3>
+        <p class="text-gray-600 mb-4">79mm telephoto and ProMotion display.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦690,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2013%20Pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 14 -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/14.jpg" alt="iPhone 14" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 14</h3>
+        <p class="text-gray-600 mb-4">New safety features and improved performance.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦720,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2014" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 14 Pro -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/14 pro.jpg" alt="iPhone 14 Pro" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 14 Pro</h3>
+        <p class="text-gray-600 mb-4">Always-on display, A16 Bionic chip.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦900,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2014%20Pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 14 Pro Max -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/14 pro.jpg" alt="iPhone 14 Pro Max" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 14 Pro Max</h3>
+        <p class="text-gray-600 mb-4">Biggest Pro display with Pro camera system.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦1,450,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2014%20Pro%20Max" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 15 -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/15.jpg" alt="iPhone 15" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 15</h3>
+        <p class="text-gray-600 mb-4">USB-C port, upgraded camera features.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦950,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2015" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 15 Pro -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/15 pro.jpg" alt="iPhone 15 Pro" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 15 Pro</h3>
+        <p class="text-gray-600 mb-4">Titanium frame, A17 Pro chip.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦1,300,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2015%20Pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 15 Pro Max -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/15 pro.jpg" alt="iPhone 15 Pro Max" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 15 Pro Max</h3>
+        <p class="text-gray-600 mb-4">Largest Pro, best battery and camera.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦1,450,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2015%20Pro%20Max" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 16 -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/16.jpg" alt="iPhone 16" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 16</h3>
+        <p class="text-gray-600 mb-4">Rumoured new chipset and designs.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦1,300,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2016" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 16 Pro -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/16 pro.jpg" alt="iPhone 16 Pro" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 16 Pro</h3>
+        <p class="text-gray-600 mb-4">Next-gen specs, pro-level performance.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦1,750,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2016%20Pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 16 Pro Max -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/16 pro.jpg" alt="iPhone 16 Pro Max" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 16 Pro Max</h3>
+        <p class="text-gray-600 mb-4">Ultimate performance, largest premium display.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦2,100,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2016%20Pro%20Max" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+    </div>
+    <!-- iPhone 16 Plus -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/16.jpg" alt="iPhone 16 Plus" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPhone 16 Plus</h3>
+        <p class="text-gray-600 mb-4">Larger size for bigger screen lovers.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦1,400,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2016%20Plus" target="_blank" class="order-btn live-animate bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center animate-bounce">Order Now</a>
+    </div>
+    <!-- iPad 9th Gen -->
+    <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
+        <img src="img/9th.jpg" alt="iPad 9th Gen" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">iPad 9th Gen</h3>
+        <p class="text-gray-600 mb-4">Base model iPad, perfect for study and media.</p>
+        <span class="text-2xl font-bold text-blue-600 mb-4">₦350,000</span>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPad%209th%20Gen" target="_blank" class="order-btn live-animate bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center animate-bounce">Order Now</a>
     </div>
 </div>
-<!--Magsafe-->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.2s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/magsafe.jpg" 
-             alt="Apple Magsafe " 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2">Apple MagSafe Battery Pack Wireless Power Bank</h3>
-    <p class="text-gray-600 mb-4">The Apple MagSafe Battery Pack provides safe, wireless charging for your iPhone on the go.</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦20,000</span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20magsafe" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-          contact
-        </a>
-    </div>
-</div>
-<!--Anker-->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.2s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/anker.jpg" 
-             alt="ANKER" 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2">Anker</h3>
-    <p class="text-gray-600 mb-4">Anker Laptop Power Bank, 25,000mAh Portable Charger with Triple 100W USB-C Ports, Built-in and Retractable Cables, for iPhone 16/15 Series, MacBook, Samsung, and More (Flight-Approved)</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦170,000</span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Anker%20powerbank" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-          contact
-        </a>
-    </div>
-</div>
-<!-- AirPods Pro (2nd Gen) -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.2s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/airpodpro.jpeg" 
-             alt="AirPods Pro (2nd Gen)" 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2">AirPods Pro (2nd Gen)</h3>
-    <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦180,000</span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro%202nd%20Gen" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-          contact
-        </a>
-    </div>
-</div>
-
-
-<!-- AirPods Pro (2nd Gen) -->
-
- <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.2s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/airpodpro.jpeg" 
-             alt="AirPods Pro (2nd Gen)" 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2"> AirPods Pro 2 USB-C </h3>
-    <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦60,000</span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro%202nd%20Gen" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-          contact
-        </a>
-    </div>
-</div>
-<!-- AirPods Pro  -->
-
- <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.2s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/airpods pro.webp" 
-             alt="AirPods Pro" 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2"> AirPods Pro </h3>
-    <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦90,000</span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-          contact
-        </a>
-    </div>
-</div>
-<!-- AirPods Pro -->
-
- <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.2s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/airpods pro.webp" 
-             alt="AirPods Pro" 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2"> AirPods Pro </h3>
-    <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦40,000</span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-          contact
-        </a>
-    </div>
-</div>
-<!-- A9 pro -->
-
- <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.2s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/a9pro.webp" 
-             alt="A9 pro" 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2"> A9 pro </h3>
-    <p class="text-gray-600 mb-4">Anc+enc Airpods Headphones With Smart Display Screen</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦40,000</span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20A9pro" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-          contact
-        </a>
-    </div>
-</div>
-
-<!--bose-->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.2s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/bose.jpg" 
-             alt="bose" 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2"> Bose QuietComfort ultra Headphones </h3>
-    <p class="text-gray-600 mb-4">Bose QuietComfort Headphones deliver premium sound with powerful noise cancellation for all-day comfort.</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦60,000</span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20bose%20headphones" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-          contact
-        </a>
-    </div>
-</div>
-<!-- Apple Watch Ultra -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.8s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/ultra watch.jpeg" 
-             alt="Apple Watch Ultra" 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2">Apple Watch Ultra</h3>
-    <p class="text-gray-600 mb-4">49mm aerospace-grade titanium, dual-frequency GPS, 36-hour battery life, and extreme sports support.</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦300,000 </span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Watch%20Ultra" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-            conatact
-        </a>
-    </div>
-</div>
-<!-- Apple Watch Series 9 -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.4s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/series9.jpeg" 
-             alt="Apple Watch Series 9" 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2">Apple Watch Series 9</h3>
-    <p class="text-gray-600 mb-4">The most advanced Apple Watch with the new S9 chip and brighter display.</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦90,000 </span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Watch%20Series%209" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-            contact
-        </a>
-    </div>
-</div>
-
-<!-- Apple Watch Series 10 -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in" style="animation-delay: 0.6s;">
-    <div class="flex justify-center mb-4">
-        <img src="img/series10.jpg" 
-             alt="Apple Watch Series 10" 
-             class="h-48 object-contain">
-    </div>
-    <h3 class="text-xl font-semibold mb-2">Apple Watch Series 10</h3>
-    <p class="text-gray-600 mb-4">All-new larger display and advanced health tracking technology.</p>
-    <div class="flex justify-between items-center">
-        <span class="text-2xl font-bold text-blue-600">₦150,000</span>
-        <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Watch%20Series%2010" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300">
-            conatact
-        </a>
-    </div>
-</div>
-
-        <!-- iPhone 8 -->
-        <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-          <div class="flex justify-center mb-4">
-<img src="img/8.jpg" alt="iPhone 8" class="h-48 object-contain">
-          </div>
-          <h3 class="text-xl font-semibold mb-2">iPhone 8</h3>
-          <p class="text-gray-600 mb-4">Classic 4.7" Retina display, reliable and affordable.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-blue-600">₦140,000</span>
-            <a href="https://wa.me/2347037372750? text=I%20want%20to%20buy%20iPhone%208" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-          </div>
-        </div>
-
-        <!-- iPhone 8 Plus 64GB -->
-        <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-          <div class="flex justify-center mb-4">
-            <img src="img/8plus.jpg" alt="iPhone 8 Plus 64GB" class="h-48 object-contain"/>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">iPhone 8 Plus 64GB</h3>
-          <p class="text-gray-600 mb-4">Big screen 5.5", 64GB, dual cameras.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-blue-600">₦150,000 </span>
-            <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%208%20Plus%2064GB" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-          </div>
-        </div>
-
-        <!-- iPhone 8 Plus 128GB -->
-        <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-          <div class="flex justify-center mb-4">
-            <img src="img/8plus.jpg" alt="iPhone 8 Plus 128GB" class="h-48 object-contain"/>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">iPhone 8 Plus 128GB</h3>
-          <p class="text-gray-600 mb-4">Large storage option, pristine condition.</p>
-          <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦190,000</span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%208%20Plus%20128GB" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-        </div>
-
-        <!-- iPhone XS 64GB -->
-        <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-          <div class="flex justify-center mb-4"><img src="img/x.jpg" alt="iPhone XS 64GB" class="h-48 object-contain"></div>
-          <h3 class="text-xl font-semibold mb-2">iPhone XS 64GB</h3>
-          <p class="text-gray-600 mb-4">Compact OLED display, dual-camera system.</p>
-          <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦250,000 </span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%20XS%2064GB" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-        </div>
-
-        <!-- iPhone XS 256GB -->
-        <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-          <div class="flex justify-center mb-4"><img src="img/x.jpg" alt="iPhone XS 256GB" class="h-48 object-contain"></div>
-          <h3 class="text-xl font-semibold mb-2">iPhone XS 256GB</h3>
-          <p class="text-gray-600 mb-4">Higher storage model, ready to go.</p>
-          <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦260,000 </span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%20XS%20256GB" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-        </div>
-
-        <!-- iPhone XR -->
-        <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-          <div class="flex justify-center mb-4"><img src="img/xr.jpg" alt="iPhone XR" class="h-48 object-contain"></div>
-          <h3 class="text-xl font-semibold mb-2">iPhone XR</h3>
-          <p class="text-gray-600 mb-4">6.1” Liquid Retina, vibrant colors.</p>
-          <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦300,000</span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%20XR" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-        </div>
-
-        <!-- iPhone XS Max -->
-        <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-          <div class="flex justify-center mb-4"><img src="img/xs max.jpg" alt="iPhone XS Max" class="h-48 object-contain"></div>
-          <h3 class="text-xl font-semibold mb-2">iPhone XS Max</h3>
-          <p class="text-gray-600 mb-4">Flagship specs with large 6.5” OLED display.</p>
-          <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦280,000 </span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%20XS%20Max" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-        </div>
-
-        <!-- iPhone 11 -->
-        <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-          <div class="flex justify-center mb-4"><img src="img/11.jpg" alt="iPhone 11" class="h-48 object-contain"></div>
-          <h3 class="text-xl font-semibold mb-2">iPhone 11</h3>
-          <p class="text-gray-600 mb-4">Dual cameras, long battery life, vibrant finish.</p>
-          <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦350,000 </span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2011" target="_blank" class="bg-green-600 hover :bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-        </div>
-            
-        <!-- iPhone 12 -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/12.jpg" alt="iPhone 12" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 12</h3>
-  <p class="text-gray-600 mb-4">Super Retina XDR, A14 Bionic, 5G.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦450,000</span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2012" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 12 Pro -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/12 pro.jpg" alt="iPhone 12 Pro" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 12 Pro</h3>
-  <p class="text-gray-600 mb-4">Pro camera system with LiDAR.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦560,000</span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2012%20Pro" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 12 Pro Max -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/12 pro.jpg" alt="iPhone 12 Pro Max" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 12 Pro Max</h3>
-  <p class="text-gray-600 mb-4">Largest screen and best camera in the lineup.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦630,000 </span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2012%20Pro%20Max" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 13 -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/13.jpg" alt="iPhone 13" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 13</h3>
-  <p class="text-gray-600 mb-4">Improved battery, brighter display.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦550,000 </span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2013" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 13 Pro -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/13 pro.jpg" alt="iPhone 13 Pro" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 13 Pro</h3>
-  <p class="text-gray-600 mb-4">79mm telephoto and ProMotion display.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦690,000 </span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2013%20Pro" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 14 -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/14.jpg" alt="iPhone 14" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 14</h3>
-  <p class="text-gray-600 mb-4">New safety features and improved performance.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦720,000 </span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2014" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-<!-- iPhone 14 Pro -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/14 pro.jpg" alt="iPhone 14 Pro" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 14 Pro</h3>
-  <p class="text-gray-600 mb-4">Always-on display, A16 Bionic chip.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦900,000 </span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2014%20Pro" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 14 Pro Max -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/14 pro.jpg" alt="iPhone 14 Pro Max" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 14 Pro Max</h3>
-  <p class="text-gray-600 mb-4">Biggest Pro display with Pro camera system.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦1,450,000 </span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2014%20Pro%20Max" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 15 -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/15.jpg" alt="iPhone 15" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 15</h3>
-  <p class="text-gray-600 mb-4">USB-C port, upgraded camera features.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦950,000 </span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2015" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 15 Pro -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/15 pro.jpg" alt="iPhone 15 Pro" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 15 Pro</h3>
-  <p class="text-gray-600 mb-4">Titanium frame, A17 Pro chip.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦1,300,000 </span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2015%20Pro" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 15 Pro Max -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/15 pro.jpg" alt="iPhone 15 Pro Max" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 15 Pro Max</h3>
-  <p class="text-gray-600 mb-4">Largest Pro, best battery and camera.</p>
-  <div class="flexjustify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦1,450,000 </span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2015%20Pro%20Max" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 16 -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/16.jpg" alt="iPhone 16" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 16</h3>
-  <p class="text-gray-600 mb-4">Rumoured new chipset and designs.</p>
-  <div class="flex justify-between items-center">
-    <span class="text-2xl font-bold text-blue-600">₦1,300,000 </span>
-    <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2016" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a>
-  </div>
-</div>
-
-<!-- iPhone 16 Pro -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/16 pro.jpg" alt="iPhone 16 Pro" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 16 Pro</h3>
-  <p class="text-gray-600 mb-4">Next-gen specs, pro-level performance.</p>
-  <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦1,750,000</span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2016%20Pro" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-</div>
-
-<!-- iPhone 16 Pro Max -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/16 pro.jpg" alt="iPhone 16 Pro Max" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 16 Pro Max</h3>
-  <p class="text-gray-600 mb-4">Ultimate performance, largest premium display.</p>
-  <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦2,100,000 </span><a href="https://wa.me/2347037372750text=I%20want%20to%20buy%20iPhone%2016%20Pro%20Max" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-</div>
-
-<!-- iPhone 16 Plus -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/16.jpg" alt="iPhone 16 Plus" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPhone 16 Plus</h3>
-  <p class="text-gray-600 mb-4">Larger size for bigger screen lovers.</p>
-  <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦1,400,000 </span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPhone%2016%20Plus" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-</div>
-
-<!-- iPad 9th Gen -->
-<div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in">
-  <div class="flex justify-center mb-4"><img src="img/9th.jpg" alt="iPad 9th Gen" class="h-48 object-contain"></div>
-  <h3 class="text-xl font-semibold mb-2">iPad 9th Gen</h3>
-  <p class="text-gray-600 mb-4">Base model iPad, perfect for study and media.</p>
-  <div class="flex justify-between items-center"><span class="text-2xl font-bold text-blue-600">₦350,000</span><a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20iPad%209th%20Gen" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">Contact</a></div>
-</div>
-
-
-
-      </div>
-    </div>
-  </section>
-
+<script>
+/* Add bouncy standout animation to all .order-btn.live-animate buttons */
+const style = document.createElement('style');
+style.innerHTML = `
+.order-btn.live-animate {
+    animation: bounceOrderLive 1.2s infinite cubic-bezier(.68,-0.55,.27,1.55);
+    box-shadow: 0 0 0 0 rgba(59,130,246,0.25), 0 2px 8px 0 rgba(59,130,246,0.12);
+    position: relative;
+    z-index: 1;
+}
+@keyframes bounceOrderLive {
+    0%, 100% { transform: translateY(0) scale(1); box-shadow: 0 0 0 0 rgba(59,130,246,0.25), 0 2px 8px 0 rgba(59,130,246,0.12);}
+    10% { transform: translateY(-10px) scale(1.08); box-shadow: 0 8px 24px 0 rgba(59,130,246,0.25);}
+    20% { transform: translateY(0) scale(1); }
+    30% { transform: translateY(-6px) scale(1.04);}
+    40% { transform: translateY(0) scale(1);}
+    50% { transform: translateY(-4px) scale(1.02);}
+    60% { transform: translateY(0) scale(1);}
+    100% { transform: translateY(0) scale(1);}
+}
+`;
+document.head.appendChild(style);
+</script>
+<style>
+.order-btn {
+    font-size: 0.95rem;
+    min-width: 90px;
+    max-width: 120px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px 0 rgba(59,130,246,0.12);
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: bounceOrder 1s infinite;
+}
+.order-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px 0 rgba(59,130,246,0.18);
+}
+@keyframes bounceOrder {
+    0%, 100% { transform: translateY(0); }
+    20% { transform: translateY(-8px); }
+    40% { transform: translateY(0); }
+    60% { transform: translateY(-4px); }
+    80% { transform: translateY(0); }
+}
+</style>
 
    <!-- About Section -->
     <section id="about" class="py-16 bg-gray-100">
@@ -832,7 +763,8 @@ From Enugu to beyond, we’ve built a brand centered on trust, transparency, and
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <div class="flex items-center space-x-2">
-                        <i class="fab fa-apple text-2xl text-white"></i>
+                        
+                        <img src="img/logolex_no_bg.png" alt="LEX TECH Logo" class="h-12 w-auto">
                         <h2 class="text-xl font-bold">LEX TECH COMPANY</h2>
                     </div>
                     <p class="mt-2 text-blue-100">Premium Apple Gadgets Retailer</p>
@@ -848,7 +780,7 @@ From Enugu to beyond, we’ve built a brand centered on trust, transparency, and
             
             <div class="border-t border-blue-400 mt-6 pt-6 text-center text-blue-100">
                 <p>&copy; 2025 LEX TECH COMPANY. All rights reserved.</p>
-                <p class="mt-2">Apple and the Apple logo are trademarks of Apple Inc.</p>
+               
             </div>
         </div>
     </footer>
