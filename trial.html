@@ -48,17 +48,16 @@
         <a href="#contact" class="block text-white px-4 py-2 hover:bg-blue-800">Contact</a>
     </div>
 </header>
-
-
- <!-- Hero Section -->
-  <style>
-    #home {
+<!-- Hero Section -->
+<style>
+#home {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    position: relative;
 }
-
-  .hero-section {
+.hero-section {
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -66,12 +65,29 @@
     transition: opacity 1s ease-in-out;
     opacity: 1;
 }
-
 .hero-section.fade-out {
     opacity: 0;
-}</style>
+}
+.hero-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.hero-bg-img.active {
+    opacity: 1;
+}
+</style>
 
 <section id="home" class="w-full h-screen relative overflow-hidden">
+  <!-- Background images for slideshow -->
+  <img src="img/hero1.jpg" class="hero-bg-img active" alt="Hero 1">
+  <img src="img/hero2.jpg" class="hero-bg-img" alt="Hero 2">
+  <img src="img/hero3.jpg" class="hero-bg-img" alt="Hero 3">
   <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-blue-900/40"></div>
   <div class="container mx-auto px-6 py-24 md:py-32 relative z-10">
     <div class="w-full md:w-1/2 fade-in">
@@ -87,26 +103,20 @@
   </div>
 </section>
 <script>
-const images = [
-    'img/hero1.jpg',
-    'img/hero2.jpg',
-    'img/hero3.jpg'
-];
+// Hero slideshow animation
+const heroImages = document.querySelectorAll('#home .hero-bg-img');
+let heroIndex = 0;
 
-let currentIndex = 0;
-const heroSection = document.getElementById('home');
-
-function changeBackground() {
-    heroSection.style.backgroundImage = `url('${images[currentIndex]}')`;
-    heroSection.style.backgroundSize = "cover";
-    heroSection.style.backgroundPosition = "center";
-    heroSection.style.transition = "background-image 1s ease-in-out";
-
-    currentIndex = (currentIndex + 1) % images.length;
+function showHeroImage(idx) {
+    heroImages.forEach((img, i) => {
+        img.classList.toggle('active', i === idx);
+    });
 }
 
-changeBackground(); // Show first image immediately
-setInterval(changeBackground, 3000); // Change every 3 seconds
+setInterval(() => {
+    heroIndex = (heroIndex + 1) % heroImages.length;
+    showHeroImage(heroIndex);
+}, 3000);
 </script>
 
   <!-- Products Section -->
