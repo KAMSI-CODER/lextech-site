@@ -247,136 +247,425 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <h2 class="text-3xl font-bold text-center mb-12 fade-in">Our Products</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    <!-- Example Product Card (repeat for each product) -->
     <!-- AirPods Max -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
         <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpod\ max.jpg')"></div>
-
         <h3 class="text-xl font-semibold mb-2">AirPods Max</h3>
-        <p class="text-gray-600 mb-4">Premium over-ear headphones with ANC.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Premium over-ear headphones with ANC.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('AirPods Max', 'Premium over-ear headphones with advanced Active Noise Cancellation.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦400,000</span>
-        <a href="https://wa.meim/2347037372750?text=I%20want%20to%20buy%20AirPods%20Max" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
+        <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20AirPods%20Max" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- AirPods Max 2nd Generation USB-C open box -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-<div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpodsmax\ 2nd.jpeg')"></div>
+        <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpodsmax\ 2nd.jpeg')"></div>
         <h3 class="text-xl font-semibold mb-2">AirPods Max 2nd Generation USB-C (open box)</h3>
-        <p class="text-gray-600 mb-4">Premium over-ear headphones with ANC.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Premium over-ear headphones with ANC.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('AirPods Max 2nd Gen USB-C', 'Premium over-ear headphones with advanced Active Noise Cancellation. Open box edition.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦400,000</span>
         <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20AirPods%20Max%202ndGen" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
-     <!-- AirPods Max 2nd Generation USB-C -->
+    
+    <!-- AirPods Max 2nd Generation USB-C -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-<div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpodsmax\ 2nd.jpeg')"></div>
+        <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpodsmax\ 2nd.jpeg')"></div>
         <h3 class="text-xl font-semibold mb-2">AirPods Max 2nd Generation USB-C</h3>
-        <p class="text-gray-600 mb-4">Premium over-ear headphones with ANC.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Premium over-ear headphones with ANC.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('AirPods Max 2nd Gen USB-C', 'Latest generation premium over-ear headphones with enhanced Active Noise Cancellation and USB-C charging.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦600,000</span>
         <a href="https://wa.me/2347037372750?text=I%20want%20to%20buy%20AirPods%20Max%202ndGen" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- Airtags -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-<div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airtags.jpg')"></div>
+        <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airtags.jpg')"></div>
         <h3 class="text-xl font-semibold mb-2">Apple Airtags</h3>
-        <p class="text-gray-600 mb-4">AirTag helps you track and locate your personal items like keys, bags, or wallets using Apple’s Find My app.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">AirTag helps you track and locate your personal items like keys, bags, or wallets using Apple's Find My app.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('Apple Airtags', 'Compact tracking device that helps you locate keys, bags, wallets and more through the Find My app.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦30,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Airtags" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- MagSafe -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-<div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/magsafe.jpg')"></div>
+        <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/magsafe.jpg')"></div>
         <h3 class="text-xl font-semibold mb-2">Apple MagSafe Battery Pack Wireless Power Bank</h3>
-        <p class="text-gray-600 mb-4">The Apple MagSafe Battery Pack provides safe, wireless charging for your iPhone on the go.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">The Apple MagSafe Battery Pack provides safe, wireless charging for your iPhone on the go.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('Apple MagSafe Battery Pack', 'Wireless portable charger that magnetically attaches to your iPhone for convenient on-the-go charging.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦30,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20magsafe" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- Anker -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-<div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/anker.jpg')"></div>
+        <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/anker.jpg')"></div>
         <h3 class="text-xl font-semibold mb-2">Anker</h3>
-        <p class="text-gray-600 mb-4">Anker Laptop Power Bank, 25,000mAh Portable Charger with Triple 100W USB-C Ports, Built-in and Retractable Cables, for iPhone 16/15 Series, MacBook, Samsung, and More (Flight-Approved)</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Anker Laptop Power Bank, 25,000mAh Portable Charger with Triple 100W USB-C Ports, Built-in and Retractable Cables, for iPhone 16/15 Series, MacBook, Samsung, and More (Flight-Approved)</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('Anker Laptop Power Bank', 'High-capacity 25,000mAh portable charger with triple 100W USB-C ports, built-in cables, and flight approval.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦170,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Anker%20powerbank" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- AirPods Pro (2nd Gen) -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-<div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpodpro.jpeg')"></div>
+        <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpodpro.jpeg')"></div>
         <h3 class="text-xl font-semibold mb-2">AirPods Pro (2nd Gen)</h3>
-        <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('AirPods Pro (2nd Gen)', 'Next-generation AirPods with enhanced Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦180,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro%202nd%20Gen" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- AirPods Pro 2 USB-C -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
         <img src="img/airpodpro.jpeg" alt="AirPods Pro 2 USB-C" class="h-48 object-contain mb-4">
         <h3 class="text-xl font-semibold mb-2">AirPods Pro 2 USB-C</h3>
-        <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('AirPods Pro 2 USB-C', 'AirPods Pro with USB-C charging, featuring Advanced Noise Cancellation and Spatial Audio.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦60,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro%202nd%20Gen" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- AirPods Pro -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-<div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpods\ pro.webp')"></div>
+        <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpods\ pro.webp')"></div>
         <h3 class="text-xl font-semibold mb-2">AirPods Pro</h3>
-        <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('AirPods Pro', 'Premium in-ear headphones with Active Noise Cancellation and Spatial Audio support.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦90,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- AirPods Pro (lower price) -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-<div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpods\ pro.webp')"></div>
+        <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/airpods\ pro.webp')"></div>
         <h3 class="text-xl font-semibold mb-2">AirPods Pro</h3>
-        <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('AirPods Pro', 'Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio with premium comfort and seamless integration across all Apple devices.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦40,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20AirPods%20Pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+
+<style>
+.product-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.product-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+.info-btn {
+    cursor: pointer;
+    flex-shrink: 0;
+}
+</style>
+
+<div id="productModal" class="product-modal">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeProductModal()">&times;</span>
+        <h2 id="modalTitle" class="text-3xl font-bold mb-4 text-blue-600"></h2>
+        <p id="modalDescription" class="text-gray-700 mb-6 text-lg leading-relaxed"></p>
+        <div class="bg-blue-50 p-4 rounded-lg">
+            <h3 class="font-semibold text-gray-800 mb-3">Key Features:</h3>
+            <ul id="modalFeatures" class="list-disc list-inside text-gray-700 space-y-2"></ul>
+        </div>
+    </div>
+</div>
+
+<script>
+function openProductModal(title, description) {
+    const modal = document.getElementById('productModal');
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalDescription').textContent = description;
+    
+    const features = {
+        'AirPods Pro': [
+            'Active Noise Cancellation (ANC)',
+            'Adaptive Transparency mode',
+            'Personalized Spatial Audio',
+            '6-hour battery life per charge',
+            'MagSafe charging case',
+            'Seamless Apple device integration',
+            'Water and sweat resistant (IPX4)',
+            'Automatic switching between devices'
+        ],
+        'AirPods Max': [
+            'Premium over-ear design',
+            'Active Noise Cancellation',
+            'Spatial Audio support',
+            ' 20-hour battery life',
+            'Digital Crown for control',
+            'Seamless Apple device integration'
+        ],
+        'AirPods Max 2nd Gen USB-C': [
+            'Enhanced ANC technology',
+            'USB-C fast charging',
+            'Improved battery performance',
+            'Premium sound quality',
+            'Spatial Audio with head tracking'
+        ],
+        'Apple Airtags': [
+            'Precise tracking with Find My app',
+            'Ultra-Wideband technology',
+            'Replaceable battery',
+            'Water resistant design',
+            'Customizable with names and emojis'
+        ],
+        'Apple MagSafe Battery Pack': [
+            'Magnetic attachment',
+            'Wireless charging',
+            'Compact and portable',
+            'Works with iPhone 12 and later',
+            'LED status indicator'
+        ],
+        'Anker Laptop Power Bank': [
+            '25,000mAh capacity',
+            'Triple 100W USB-C ports',
+            'Built-in and retractable cables',
+            'Flight-approved',
+            'Fast charging support'
+        ],
+        'AirPods Pro (2nd Gen)': [
+            'Enhanced Active Noise Cancellation',
+            'Adaptive Transparency',
+            'Personalized Spatial Audio',
+            'Improved 6-hour battery',
+            'MagSafe charging case',
+            'Water resistant (IPX4)'
+        ],
+        'AirPods Pro 2 USB-C': [
+            'USB-C charging port',
+            'Advanced ANC',
+            'Spatial Audio',
+            '6-hour playtime',
+            'Quick charging support'
+        ],
+        'A9 pro': [
+            'ANC + ENC technology',
+            'Smart display screen',
+            'Comfortable fit',
+            'Long battery life'
+        ],
+        'Bose QuietComfort ultra': [
+            'Premium noise cancellation',
+            'High-quality sound',
+            'All-day comfort',
+            'Long battery life',
+            'Easy controls'
+        ],
+        'Apple Watch Ultra': [
+            'Rugged titanium design',
+            'Advanced health tracking',
+            'Action button',
+            'Always-On Retina display',
+            'Water resistant'
+        ],
+        'Watch Ultra 2': [
+            'Enhanced S9 chip',
+            'Improved durability',
+            'Advanced sensors',
+            'Long battery life (36 hours)',
+            'Premium build quality'
+        ],
+        'Apple Watch Series 9': [
+            'S9 chip',
+            'Brighter display',
+            'Advanced health features',
+            'All-day battery life',
+            'Fitness tracking'
+        ],
+        'Apple Watch Series 10': [
+            'Larger display',
+            'Advanced health monitoring',
+            'Faster processor',
+            'Improved battery life',
+            'Water resistant'
+        ]
+    };
+    
+    const featuresList = document.getElementById('modalFeatures');
+    featuresList.innerHTML = '';
+    (features[title] || ['Premium quality product']).forEach(feature => {
+        const li = document.createElement('li');
+        li.textContent = feature;
+        featuresList.appendChild(li);
+    });
+    
+    modal.classList.add('active');
+}
+
+function closeProductModal() {
+    document.getElementById('productModal').classList.remove('active');
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById('productModal');
+    if (event.target === modal) {
+        modal.classList.remove('active');
+    }
+}
+</script>
+    
     <!-- A9 pro -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-<div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/a9pro.webp')"></div>
+        <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/a9pro.webp')"></div>
         <h3 class="text-xl font-semibold mb-2">A9 pro</h3>
-        <p class="text-gray-600 mb-4">Anc+enc Airpods Headphones With Smart Display Screen</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">ANC+ENC Airpods Headphones With Smart Display Screen</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('A9 pro', 'Premium airpods with ANC and ENC technology featuring a smart display screen.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦40,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20A9pro" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- Bose -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-<div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/bose.jpg')"></div>
+        <div class="h-48 w-full bg-center bg-contain bg-no-repeat" style="background-image: url('img/bose.jpg')"></div>
         <h3 class="text-xl font-semibold mb-2">Bose QuietComfort ultra Headphones</h3>
-        <p class="text-gray-600 mb-4">Bose QuietComfort Headphones deliver premium sound with powerful noise cancellation for all-day comfort.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Bose QuietComfort Headphones deliver premium sound with powerful noise cancellation for all-day comfort.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('Bose QuietComfort ultra', 'Premium headphones with world-class noise cancellation and superior audio quality.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦60,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20bose%20headphones" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- Apple Watch Ultra -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
         <img src="img/ultra watch.jpeg" alt="Apple Watch Ultra" class="h-48 object-contain mb-4">
         <h3 class="text-xl font-semibold mb-2">Apple Watch Ultra</h3>
-        <p class="text-gray-600 mb-4">Rugged design, advanced health and fitness tracking, long battery life.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Rugged design, advanced health and fitness tracking, long battery life.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('Apple Watch Ultra', 'Rugged titanium smartwatch designed for extreme adventures with advanced health monitoring.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦100,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Watch%20Ultra" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
-     <!--  Watch Ultra -->
+    
+    <!--  Watch Ultra 2 -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
-        <img src="img/ultra watch.jpeg" alt="Apple Watch Ultra" class="h-48 object-contain mb-4">
-        <h3 class="text-xl font-semibold mb-2"> Watch Ultra 2</h3>
-        <p class="text-gray-600 mb-4">Rugged design, advanced health and fitness tracking, long battery life.</p>
+        <img src="img/ultra watch.jpeg" alt="Apple Watch Ultra 2" class="h-48 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Watch Ultra 2</h3>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">Rugged design, advanced health and fitness tracking, long battery life.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('Watch Ultra 2', 'Next-generation rugged smartwatch with enhanced durability and advanced tracking features.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦75,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Watch%20Ultra" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- Apple Watch Series 9 -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
         <img src="img/series9.jpeg" alt="Apple Watch Series 9" class="h-48 object-contain mb-4">
         <h3 class="text-xl font-semibold mb-2">Apple Watch Series 9</h3>
-        <p class="text-gray-600 mb-4">The most advanced Apple Watch with the new S9 chip and brighter display.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">The most advanced Apple Watch with the new S9 chip and brighter display.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('Apple Watch Series 9', 'Advanced smartwatch featuring the new S9 chip, brighter display, and comprehensive health tracking.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦80,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Watch%20Series%209" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+    
     <!-- Apple Watch Series 10 -->
     <div class="product-card bg-gray-50 rounded-xl p-6 shadow-lg fade-in flex flex-col justify-between items-center text-center">
         <img src="img/series10.jpg" alt="Apple Watch Series 10" class="h-48 object-contain mb-4">
         <h3 class="text-xl font-semibold mb-2">Apple Watch Series 10</h3>
-        <p class="text-gray-600 mb-4">All-new larger display and advanced health tracking technology.</p>
+        <div class="flex items-center justify-center gap-2">
+            <p class="text-gray-600 mb-4">All-new larger display and advanced health tracking technology.</p>
+            <button class="info-btn text-blue-600 hover:text-blue-800 transition" onclick="openProductModal('Apple Watch Series 10', 'Latest generation Apple Watch with larger display, advanced health monitoring, and improved performance.')">
+                <i class="fas fa-info-circle text-lg"></i>
+            </button>
+        </div>
         <span class="text-2xl font-bold text-blue-600 mb-4">₦200,000</span>
         <a href="https://wa.me/2347037372750?text=I'm%20interested%20in%20the%20Apple%20Watch%20Series%2010" target="_blank" class="order-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-full font-semibold transition duration-300 text-center live-animate animate-bounce">Order Now</a>
     </div>
+</div>
  
 </div>
 <script>
@@ -520,9 +809,12 @@ From Enugu to beyond, we’ve built a brand centered on trust, transparency, and
                                 <a href="https://www.facebook.com/profile.php?id=100091666780050&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="https://x.com/aalekwe26184?s=21" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition duration-300">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
+                               
+                              <a href="https://x.com/aalekwe26184?s=21" target="_blank" class="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 512 512">
+        <path d="M389.2 48h70.6L305.6 224.2 488 464H345.4L233.7 318.6 106.5 464H35.8l164.9-188.5L24 48h146.5l100.9 131.4L389.2 48z"/>
+    </svg>
+</a>
                                 <a href="https://www.instagram.com/lextech_company?igsh=OWUzcG5sNm1zdWRp" target="_blank" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300">
                                     <i class="fab fa-instagram"></i>
                                 </a>
